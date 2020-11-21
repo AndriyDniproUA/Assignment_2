@@ -27,6 +27,10 @@ public class Circle {
         this.radius = radius;
     }
 
+    boolean containsPoint(Point p) {
+        return (this.center.distance(p)<=this.radius);
+    }
+
 
 
 

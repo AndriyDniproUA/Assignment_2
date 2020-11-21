@@ -54,17 +54,13 @@ public class Main {
 
         // checking of the points location within the circle *********************
 
-        Point center = userCircle.getCenter();
-        double radius = userCircle.getRadius();
-        double distance;
-
         System.out.println("\n\nAt this stage-3 we printout only the points that are located inside the specified circle\n");
 
 
         for (int i=0; i< points.length;i++) {
-           distance = points[i].distance(center);
-            if (distance <= radius) {
-                System.out.println("Point #:"+(i+1)+"X="+points[i].getX()+","+"Y="+points[i].getY());
+
+            if (userCircle.containsPoint(points[i])) {
+                System.out.println("Point #"+(i+1)+": X="+points[i].getX()+","+"Y="+points[i].getY());
                }
 
 
