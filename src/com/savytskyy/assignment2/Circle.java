@@ -4,12 +4,12 @@ public class Circle {
     private Point center;
     private double radius;
 
-    public Circle (Point center, double radius) {
+    public Circle(Point center, double radius) {
         this.center = center;
         this.radius = radius;
     }
-    //getters
 
+    //getters
     public Point getCenter(){
         return this.center;
     }
@@ -19,42 +19,15 @@ public class Circle {
     }
 
     //setters
-    public void setCenter(Point center){
+    public void setCenter(Point center) {
         this.center = center;
     }
 
-    public void setRadius(double radius){
+    public void setRadius(double radius) {
         this.radius = radius;
     }
 
-    boolean containsPoint(Point p) {
+    boolean containsPoint(Point p){
         return (this.center.distance(p)<=this.radius);
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

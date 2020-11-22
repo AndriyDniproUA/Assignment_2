@@ -5,7 +5,6 @@ public class Main {
 
     public static void main(String[] args) {
         Circle userCircle;
-
         Scanner sc = new Scanner (System.in);
 
         System.out.println("Java elementary");
@@ -61,25 +60,7 @@ public class Main {
 
             if (userCircle.containsPoint(points[i])) {
                 System.out.println("Point #"+(i+1)+": X="+points[i].getX()+","+"Y="+points[i].getY());
-               }
-
-
+            }
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 }
