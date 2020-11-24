@@ -57,7 +57,6 @@ public class Main {
 
 
         for (int i=0; i< points.length;i++) {
-
             if (userCircle.containsPoint(points[i])) {
                 System.out.println("Point #"+(i+1)+": X="+points[i].getX()+","+"Y="+points[i].getY());
             }

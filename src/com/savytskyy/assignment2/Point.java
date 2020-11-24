@@ -30,12 +30,9 @@ public class Point {
 
     //distance method
     public double distance (Point point) {
-        double x1 = this.x;
-        double y1 = this.y;
+        double dx = x-point.x;
+        double dy = y-point.y;
 
-        double x2 = point.getX();
-        double y2 = point.getY();
-
-        return Math.sqrt(Math.pow((x1-x2),2)+Math.pow((y1-y2),2));
+        return Math.sqrt(Math.pow(dx,2)+Math.pow(dy,2));
     }
 }
